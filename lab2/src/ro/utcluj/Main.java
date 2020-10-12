@@ -1,5 +1,8 @@
 package ro.utcluj;
 
+import java.time.LocalDate;
+import ro.utcluj.validator.ReservationValidator;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -17,13 +20,24 @@ public class Main {
         // - numar persoane
         // - data intrare - data iesire
 
+
+
         Client firstClient = new Client("George", "Pop");
         firstClient.presentYourself();
-        System.out.println(firstClient.firstName);
 
         Client secondClient = new Client();
         secondClient.firstName = "Mirela";
         secondClient.presentYourself();
-        System.out.println(secondClient.firstName);
+
+        firstClient.presentYourself();
+
+        LocalDate exitDate = LocalDate.now().plusDays(5);
+        final Reservation reservation = new Reservation(firstClient, exitDate);
+//        reservation.setRoomNumber(-5);
+        System.out.println(Reservation.HOTEL_NAME);
+
+        System.out.println(Reservation.HOTEL_NAME);
+
+        System.out.println(ReservationValidator.isValid(null));
     }
 }
