@@ -1,11 +1,11 @@
-package ro.utcluj;
+package ro.utcluj.model;
 
 // import statements
 
 public class Client {
 
   // attributes / class fields / class variables
-  public String firstName;
+  private String firstName;
   private String lastName;
   private Double reservationsSpendings;
   private String uniqueRegistrationNumber;
@@ -16,7 +16,7 @@ public class Client {
   }
 
   public Client(String firstName) {
-    this(firstName, (Double) null);
+    this(firstName, (String) null);
   }
 
   public Client(String firstName, String lastName) {
@@ -33,5 +33,29 @@ public class Client {
   // methods / functions
   public void presentYourself() {
     System.out.printf("Hello there, my name is %s\n", firstName);
+  }
+
+  public String getLastName() {
+    return lastName;
+  }
+
+  public void setLastName(String lastName) {
+    this.lastName = lastName;
+  }
+
+  public String getUniqueRegistrationNumber() {
+    return uniqueRegistrationNumber;
+  }
+
+  public void setUniqueRegistrationNumber(String uniqueRegistrationNumber) {
+    this.uniqueRegistrationNumber = uniqueRegistrationNumber;
+  }
+
+  public Double getReservationsSpendings() {
+    return reservationsSpendings;
+  }
+
+  public void setReservationsSpendings(Double reservationsSpendings) {
+    this.reservationsSpendings = reservationsSpendings;
   }
 }
