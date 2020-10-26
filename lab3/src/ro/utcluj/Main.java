@@ -9,6 +9,9 @@ import ro.utcluj.model.product.Product;
 public class Main {
 
   public static void main(String[] args) {
+
+    // hello
+
     for (Product product : getProducts()) {
       if (product != null) {
         System.out.println(product.getDescription());
