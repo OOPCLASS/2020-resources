@@ -1,38 +1,36 @@
 package ro.utcluj;
 
-import ro.utcluj.model.product.electronics.ElectronicProduct;
-import ro.utcluj.model.product.electronics.Laptop;
-import ro.utcluj.model.product.toys.Lego;
-import ro.utcluj.model.product.Product;
-import ro.utcluj.model.TechnicalSpecifications;
+
+import ro.utcluj.model.Author;
+import ro.utcluj.model.Boardgame;
+import ro.utcluj.model.Book;
+import ro.utcluj.model.Product;
 
 public class Main {
 
   public static void main(String[] args) {
     for (Product product : getProducts()) {
-      System.out.println(product.getDescription());
+      if (product != null) {
+        System.out.println(product.getDescription());
+      }
     }
-
-    // ordinea in care se executa constructorii intr-o ierarhie de clase
   }
 
   private static Product[] getProducts() {
-    Laptop laptop = new Laptop();
-    laptop.setTitle("Laptop super bun");
-    laptop.setPrice(1599.00);
+    Book book = new Book();
+    book.setTitle("Degetica");
+    Author author = new Author();
+    author.setName("Degetel");
+//    book.setAuthor(author);
 
-    TechnicalSpecifications technicalSpecifications = new TechnicalSpecifications();
-    technicalSpecifications.setRamMemorySizeInMb(8000);
+    Boardgame boardgame = new Boardgame();
+    boardgame.setTitle("Alhambra");
+    boardgame.setNumberOfPieces(10);
 
-    Lego lego = new Lego();
-    lego.setTitle("Lego Minecraft");
-    lego.setPrice(124.99);
-
-    ElectronicProduct[] electronicProducts = new ElectronicProduct[10];
-
-    Product[] products = new Product[2];
-    products[0] = laptop;
-    products[1] = lego;
+    Product[] products = new Product[3];
+    products[0] = book;
+    products[1] = boardgame;
+    products[2] = null;
     return products;
   }
 }
