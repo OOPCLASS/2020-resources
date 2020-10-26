@@ -1,8 +1,15 @@
-package ro.utcluj.model;
+package ro.utcluj.model.product.electronics;
 
-public class Laptop extends Product {
+import ro.utcluj.model.TechnicalSpecifications;
+
+public class Laptop extends ElectronicProduct {
 
   private TechnicalSpecifications technicalSpecifications;
+
+  public Laptop() {
+    super(220);
+    System.out.println("Initializing Laptop");
+  }
 
   public TechnicalSpecifications getTechnicalSpecifications() {
     return technicalSpecifications;

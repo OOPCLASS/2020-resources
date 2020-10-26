@@ -1,8 +1,9 @@
 package ro.utcluj;
 
-import ro.utcluj.model.Laptop;
-import ro.utcluj.model.Lego;
-import ro.utcluj.model.Product;
+import ro.utcluj.model.product.electronics.ElectronicProduct;
+import ro.utcluj.model.product.electronics.Laptop;
+import ro.utcluj.model.product.toys.Lego;
+import ro.utcluj.model.product.Product;
 import ro.utcluj.model.TechnicalSpecifications;
 
 public class Main {
@@ -11,6 +12,8 @@ public class Main {
     for (Product product : getProducts()) {
       System.out.println(product.getDescription());
     }
+
+    // ordinea in care se executa constructorii intr-o ierarhie de clase
   }
 
   private static Product[] getProducts() {
@@ -24,6 +27,8 @@ public class Main {
     Lego lego = new Lego();
     lego.setTitle("Lego Minecraft");
     lego.setPrice(124.99);
+
+    ElectronicProduct[] electronicProducts = new ElectronicProduct[10];
 
     Product[] products = new Product[2];
     products[0] = laptop;

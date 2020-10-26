@@ -1,4 +1,4 @@
-package ro.utcluj.model;
+package ro.utcluj.model.product;
 
 public class Product {
 
@@ -6,6 +6,10 @@ public class Product {
   private String imageUrl;
   private Double price;
   private Double rating;
+
+  public Product() {
+    System.out.println("Initializing Product");
+  }
 
   public String getTitle() {
     return title;
@@ -41,5 +45,9 @@ public class Product {
 
   public String getDescription() {
     return String.format("Title: %s, price: %.2f", title, price);
+  }
+
+  public void doSomething() {
+    System.out.println("yes");
   }
 }
