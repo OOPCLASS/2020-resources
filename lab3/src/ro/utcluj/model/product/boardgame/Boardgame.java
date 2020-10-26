@@ -1,8 +1,14 @@
-package ro.utcluj.model;
+package ro.utcluj.model.product.boardgame;
+
+import ro.utcluj.model.product.Product;
 
 public class Boardgame extends Product {
 
   private Integer numberOfPieces;
+
+  public Boardgame() {
+    System.out.println("Initializing Boardgame");
+  }
 
   public Integer getNumberOfPieces() {
     return numberOfPieces;

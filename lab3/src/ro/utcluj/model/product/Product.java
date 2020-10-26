@@ -2,21 +2,13 @@ package ro.utcluj.model.product;
 
 public class Product {
 
-  private String title;
   private String imageUrl;
+  private String title;
   private Double price;
-  private Double rating;
+  protected Double rating;
 
   public Product() {
     System.out.println("Initializing Product");
-  }
-
-  public String getTitle() {
-    return title;
-  }
-
-  public void setTitle(String title) {
-    this.title = title;
   }
 
   public String getImageUrl() {
@@ -25,6 +17,14 @@ public class Product {
 
   public void setImageUrl(String imageUrl) {
     this.imageUrl = imageUrl;
+  }
+
+  public String getTitle() {
+    return title;
+  }
+
+  public void setTitle(String title) {
+    this.title = title;
   }
 
   public Double getPrice() {
@@ -44,10 +44,6 @@ public class Product {
   }
 
   public String getDescription() {
-    return String.format("Title: %s, price: %.2f", title, price);
-  }
-
-  public void doSomething() {
-    System.out.println("yes");
+    return String.format("Title: %s", title);
   }
 }

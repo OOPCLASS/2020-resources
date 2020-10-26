@@ -2,9 +2,9 @@ package ro.utcluj;
 
 
 import ro.utcluj.model.Author;
-import ro.utcluj.model.Boardgame;
-import ro.utcluj.model.Book;
-import ro.utcluj.model.Product;
+import ro.utcluj.model.product.boardgame.Boardgame;
+import ro.utcluj.model.product.book.Book;
+import ro.utcluj.model.product.Product;
 
 public class Main {
 
