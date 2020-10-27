@@ -4,6 +4,8 @@ public class TechnicalSpecification {
 
   private boolean wireless;
   private Integer weightInG;
+  private Double lengthInCm;
+  private String tipMaterial;
 
   public boolean isWireless() {
     return wireless;
@@ -19,5 +21,21 @@ public class TechnicalSpecification {
 
   public void setWeightInG(Integer weightInG) {
     this.weightInG = weightInG;
+  }
+
+  public Double getLengthInCm() {
+    return lengthInCm;
+  }
+
+  public void setLengthInCm(Double lengthInCm) {
+    this.lengthInCm = lengthInCm;
+  }
+
+  public String getTipMaterial() {
+    return tipMaterial;
+  }
+
+  public void setTipMaterial(String tipMaterial) {
+    this.tipMaterial = tipMaterial;
   }
 }

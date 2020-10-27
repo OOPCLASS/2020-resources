@@ -1,7 +1,7 @@
 package ro.utcluj;
 
-import ro.utcluj.model.Bicycle;
-import ro.utcluj.model.Headphones;
+import ro.utcluj.model.MakeupPallete;
+import ro.utcluj.model.Pen;
 import ro.utcluj.model.Product;
 import ro.utcluj.model.TechnicalSpecification;
 
@@ -10,23 +10,32 @@ public class Main {
   public static void main(String[] args) {
     for (Product product : getProducts()) {
       System.out.println(product.getDescription());
+//      if (product instanceof Pen) {
+//        TechnicalSpecification technicalSpecification = ((Pen) product).getTechnicalSpecification();
+//        if (technicalSpecification != null) {
+//          System.out.println(technicalSpecification.getLengthInCm());
+//        }
+//      }
+//      if (product instanceof MakeupPallete) {
+//        System.out.println(((MakeupPallete) product).getWeightInG());
+//      }
     }
   }
 
   public static Product[] getProducts() {
-    Headphones headphones = new Headphones();
-    headphones.setTitle("Sony headphones");
+    Pen pen = new Pen();
+    pen.setTitle("Stilou Pelikan");
     TechnicalSpecification technicalSpecification = new TechnicalSpecification();
-    technicalSpecification.setWeightInG(100);
-    headphones.setTechnicalSpecification(technicalSpecification);
+    technicalSpecification.setLengthInCm(12.5);
+    //pen.setTechnicalSpecification(technicalSpecification);
 
-    Bicycle bicycle = new Bicycle();
-    bicycle.setTitle("Pegas scump");
-    bicycle.setElectric(true);
+    MakeupPallete makeupPallete = new MakeupPallete();
+    makeupPallete.setTitle("Maybelline");
+    makeupPallete.setWeightInG(12);
 
     Product[] products = new Product[2];
-    products[0] = headphones;
-    products[1] = bicycle;
+    products[0] = pen;
+    products[1] = makeupPallete;
     return products;
   }
 }
