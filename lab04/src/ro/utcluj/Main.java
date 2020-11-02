@@ -33,6 +33,14 @@ public class Main {
   // Client
   //  - name
 
+  // create clients
+  // create airline companies
+  // create planes/pilots
+  // create flights
+  // assign client to flight
+  // list flights for a specific day
+  // list flights by from/to
+
   public static void main(String[] args) {
     User user = new User();
     user.setName("Adi");
