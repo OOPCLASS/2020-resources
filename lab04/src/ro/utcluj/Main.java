@@ -41,6 +41,26 @@ public class Main {
   // list flights for a specific day
   // list flights by from/to
 
+//  class Filter {
+//
+//    private String from;
+//    private String to;
+//    private LocalDate date;
+//  }
+
+  // public Flight[] getFlights(Filter filter) {
+  //  for (Flight flight: flights) {
+  //    if (flight.getFrom().equals(filter.getFrom()) {
+  //    }
+  //  }
+  // }
+  // public Flight[] getFlightsByFromAndToAndDate(String from, String to, LocalDate date) {
+  //  for (Flight flight: flights) {
+  //    if (flight.getFrom().equals(from) {
+  //    }
+  //  }
+  // }
+
   public static void main(String[] args) {
     User user = new User();
     user.setName("Adi");
