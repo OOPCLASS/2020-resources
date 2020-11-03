@@ -10,7 +10,8 @@ public class UserTest {
     User user = new User();
     user.setName("name");
 
-    Assert.assertEquals("namee", user.getName());
+    Assert.assertNotNull(user);
+    Assert.assertEquals("name", user.getName());
   }
 
   @Test

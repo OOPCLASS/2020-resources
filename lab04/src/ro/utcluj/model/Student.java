@@ -1,14 +1,12 @@
 package ro.utcluj.model;
 
-public class User {
+public class Student {
 
+  private int registration;
   private String name;
-
-  public String getName() {
-    return name;
-  }
+  private String color;
 
   public void setName(String name) {
-     this.name = name;
+
   }
 }

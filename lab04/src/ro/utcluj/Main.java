@@ -40,6 +40,7 @@ public class Main {
   // assign client to flight
   // list flights for a specific day
   // list flights by from/to
+  // from a list of flights return the flight which has the client with a specific name on board
 
 //  class Filter {
 //
