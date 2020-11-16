@@ -27,6 +27,9 @@ public class Main {
     print(dolls);
 
     Apple[] apples = new Apple[10];
+    apples[0] = new Apple("b");
+    apples[1] = new Apple("d");
+    apples[2] = new Apple("a");
     customSort(apples);
   }
 

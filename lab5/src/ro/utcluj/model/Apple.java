@@ -4,6 +4,12 @@ import java.time.LocalDate;
 
 public class Apple implements CustomComparable, CreationDateAware {
 
+  private String name;
+
+  public Apple(String name) {
+    this.name = name;
+  }
+
   @Override
   public LocalDate getCreatedAt() {
     return null;
@@ -22,11 +28,6 @@ public class Apple implements CustomComparable, CreationDateAware {
   @Override
   public void doSomething() {
 
-  }
-
-  @Override
-  public String getFieldToCompare() {
-    return null;
   }
 
   @Override
