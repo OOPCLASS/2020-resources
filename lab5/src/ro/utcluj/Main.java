@@ -40,6 +40,6 @@ public class Main {
   }
 
   private static void customSort(CustomComparable[] objects) {
-    // implementati un algoritm de sortare
+    // implemenaatati un cevea blabla
   }
 }
