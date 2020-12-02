@@ -30,5 +30,7 @@ public class Main {
     // afisati numele studentilor de la toate scolile
     // stergeti un student de la o anumita scoala
     // adaugati un alt student la o anumita scoala
+
+    Map<String, List<Person>> personsByCity = new HashMap<>();
   }
 }
